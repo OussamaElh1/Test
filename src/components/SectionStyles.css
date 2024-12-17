@@ -1,0 +1,67 @@
+/* Parent container for side-by-side layout */
+.sections-container {
+    display: flex; /* Flexbox for horizontal alignment */
+    justify-content: space-between; /* Even spacing between sections */
+    align-items: stretch; /* Stretch sections to equal height */
+    gap: 2rem; /* Spacing between sections */
+    margin: 2rem auto; /* Centering with margins */
+    max-width: 1200px; /* Limit max width */
+    padding: 0 2rem; /* Horizontal padding */
+    box-sizing: border-box;
+  }
+  
+  /* Each section */
+  .section {
+    flex: 1; /* Equal width for all sections */
+    padding: 2rem; /* Inner padding */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light gray background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    color: #000; /* Default text color */
+    box-sizing: border-box; /* Include padding in width */
+    text-align: left;
+  }
+  
+  /* Title styles */
+  .section-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .section-title span {
+    font-size: 2.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  .orange {
+    color: #ff7f50;
+  }
+  
+  .yellow {
+    color: #ffd700;
+  }
+  
+  .blue {
+    color: #4682b4;
+  }
+  
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .highlight {
+    color: #00bcd4;
+    font-weight: bold;
+  }
+  
+  /* Responsive design for small screens */
+  @media (max-width: 768px) {
+    .sections-container {
+      flex-direction: column; /* Stack vertically */
+    }
+  }
+  

@@ -1,0 +1,15 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h2 {
+  font-weight: bold;
+}
+
+.btn-lg {
+  border-radius: 50px;
+}
+
+footer p {
+  margin: 0;
+}
